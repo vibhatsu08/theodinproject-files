@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Modal</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        body {
+            background-color: rgb(155, 155, 155);
+            display: flex;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            width: 500px;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 40px grey;
+            padding: 20px;
+            gap: 20px;
+        }
+        .blue-icon-image {
+            width: 45px;
+        }
+        .container-question {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(48, 48, 48);
+        }
+        .container-text {
+            font-size: 15px;
+            color: rgb(85, 85, 85);
+            margin-bottom: 10px;
+        }
+        .continue-button {
+            font-size: 15px;
+            color: white;
+            background-color: rgb(85, 149, 247);
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+        .cancel-button {
+            font-size: 15px;
+            background-color: white;
+            color: rgb(85, 149, 247);
+            border: 2px solid rgb(235, 235, 235);
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blue-icon"><img class="blue-icon-image" src="images/blue-icon.png" alt=""></div>
+        <div class="container-body">
+            <div class="container-question">Are you sure you want to do that?</div>
+            <div class="container-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, qui laboriosam. Enim in cumque vero voluptas inventore nostrum impedit nihil! Veniam aperiam dolore vero et, nobis quis porro soluta similique!
+            </div>
+            <div class="container-buttons">
+                <button class="continue-button">continue</button>
+                <button class="cancel-button">cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
