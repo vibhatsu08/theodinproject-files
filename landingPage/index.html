@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        .page-header {
+            background-color: #1F2937;
+            padding: 20px;
+        }
+        .page-header-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+        .page-header-navbar>ul>li {
+            list-style-type: none;
+            color: #c5c5c5;
+            font-size: 18px;
+            padding: 0px 20px;
+        }
+        .page-header-navbar>ul {
+            display: flex;
+            flex-direction: row;
+        }
+        .page-header-logo {
+            font-size: 24px;
+            color: #F9FAF8;
+            font-weight: 600;
+        }
+        .page-header-content {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 100px auto;
+            gap: 20px;
+        }
+        .page-header-content-section {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .page-header-content-header {
+            color: #F9FAF8;
+            font-size: 48px;
+        }
+        .page-header-content-description {
+            color: #c5c5c5;
+            font-size: 18px;
+        }
+        .page-header-button {
+            background-color: #3882F6;
+            color: #E5E7EB;
+            border: none;
+            font-size: 18px;
+            padding: 10px 30px;
+            border-radius: 10px;
+            font-weight: 500;
+            margin-top: 10px;
+            box-shadow: 10px 10px 40px #141921;
+        }
+        .page-header-image {
+            width: 500px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 40px #141921;
+        }
+
+        .page-random-info {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 100px;
+        }
+        .sections>img {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 40px rgb(169, 169, 169);
+        }
+        .page-random-sections {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            gap: 20px;
+        }
+        .page-random-info-header {
+            margin: 30px auto;
+        }
+        .sections>p {
+            margin-top: 10px;
+            text-align: center;
+            color: #808080;
+        }
+
+        .page-quote {
+            background-color: #E5E7EB;
+        }
+        .page-quote-text {
+            width: 70%;
+            margin: 0 auto;
+            padding: 100px 0;
+            color: #28374b;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .page-login-signup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 100px;
+        }
+        .page-login-signup-section {
+            background-color: #3882F6;
+            color: #F9FAF8;
+            padding: 50px 100px;
+            width: 70%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .page-login-signup-section-text-header {
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .page-login-signup-section-text-description {
+            color: #f2f2f2;
+        }
+        .page-login-signup-section-button {
+        }
+        .page-login-signup-section-button-login {
+            color: #F9FAF8;
+            background-color: #3882F6;
+            border: 2px solid #f2f2f2;
+            font-weight: 500;
+            font-size: 10px;
+            font-size: 20px;
+            padding: 5px 30px;
+            border-radius: 10px;
+            box-shadow: -5px 10px 40px #1562dd;
+        }
+        .page-login-signup-section-button-signup {
+            color: #F9FAF8;
+            background-color: #3882F6;
+            border: 2px solid #f2f2f2;
+            font-weight: 500;
+            font-size: 10px;
+            font-size: 20px;
+            padding: 5px 30px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 40px #1562dd;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <div class="page-header-navbar">
+            <div class="page-header-logo">Vedant Mistry</div>
+            <ul>
+                <li>About</li>
+                <li>LinkedIn</li>
+                <li>GitHub</li>
+            </ul>
+        </div>
+        <div class="page-header-content">
+            <div class="page-header-content-section">
+                <h1 class="page-header-content-header">This website is awesome</h1>
+                <p class="page-header-content-description">This website has some subtext that goes here under the
+                    main title. It's a smaller font and the color is lower
+                    contrast</p>
+                <button class="page-header-button">Sign Up</button>
+            </div>
+            <div class="page-header-image-section">
+                <img class="page-header-image" src="images/nathan-anderson-_tBeFVZPlPY-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="page-random-info">
+        <h1 class="page-random-info-header">Some random information.</h1>
+        <div class="page-random-sections">
+            <div class="sections">
+                <img src="images/image 1.jpg" alt="">
+                <p>Image of the mountains with a water body in the center.</p>
+            </div>
+            <div class="sections">
+                <img src="images/image 2.jpg" alt="">
+                <p>Image of the mountains in a sandy region.</p>
+            </div>
+            <div class="sections">
+                <img src="images/image 3.jpg" alt="">
+                <p>Image of the mountains covered with greenery.</p>
+            </div>
+            <div class="sections">
+                <img src="images/image 4.jpg" alt="">
+                <p>Image of the mountains with a beach side.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-quote">
+        <div class="page-quote-text">
+            <p>"Iron Man. Thats kind of catchy. It's got a nice ring to it. I mean it's not technically accurate. The suit's a gold titanium alloy, but it's kind of provocative, the imagery anyway."</p>
+            <p>-Tony Stark, The Iron Man</p>
+        </div>
+    </div>
+
+    <div class="page-login-signup">
+        <div class="page-login-signup-section">
+            <div class="page-login-signup-section-text">
+                <p class="page-login-signup-section-text-header">Call to Action! it's Time!</p>
+                <p class="page-login-signup-section-text-description">Sign up for our product by clicking that button right over there!</p>
+            </div>
+            <div class="page-login-signup-section-button">
+                <button class="page-login-signup-section-button-login">Log In</button>
+                <button class="page-login-signup-section-button-signup">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
