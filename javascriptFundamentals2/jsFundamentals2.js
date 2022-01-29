@@ -7,4 +7,11 @@ const greeting = `hello world!, ${string1}`; //by using the `` quotating marks, 
 console.log(greeting);
 
 
+const number = '1234';
+const num = Number(number);
+console.log(typeof num);
 
+//multiline strings
+const multiString = `hello world
+my name is chappie`;
+console.log(multiString);
