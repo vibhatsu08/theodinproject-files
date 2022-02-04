@@ -11,27 +11,24 @@ function computerPlay () {
     console.log(computerSelection); //prints the move played in string format.
 }
 
-function userPlay () {
-    console.log("rock paper or scissors?");
-    let userMove = "rock";
-}
 
 function roundPlayed (playerSelection, computerSelection) {
-    //user's move
-    playerSelection = userPlay();
-    //computer's move
-    computerSelection = computerPlay();
-
-
-    if (computerSelection == "rock" && (userSelection == "paper" || userSelection == "scissors")) {
-        console.log("user wins");
+    if (playerSelection === computerSelection) {
+        return "tie";
     }
-    else if (computerSelection == "paper" && (userSelection == "scissors" || userSelection == "rock")) {
-        console.log("computer wins");
+    else if ((playerSelection === "rock" && computerSelection == "scissors")
+    && (playerSelection === "paper" && computerSelection === "rock")
+    && (playerSelection === "scissors" && computerSelection === "paper")) {
+        return "player wins";
     }
-    else if (computerSelection == userSelection) {
-        console.log("tie");
+    else if ((computerSelection === "paper" && playerSelection === "rock")
+    && (computerSelection === "scissors" && playerSelection === "paper")
+    && (computerSelection === "rock" && playerSelection === "scissors")) {
+        return "computer wins";
     }
 }
 
-console.log(roundPlayed(userPlay(), computerPlay()));
+const playerSelection = window.prompt();
+const computerSelection = computerPlay();
+console.log(playerSelection);
+console.log(roundPlayed(playerSelection, computerSelection));
