@@ -1,34 +1,33 @@
-function computerPlay () {
-    const computerMoves = ["rock", "paper", "scissors"];
-    let length = computerMoves.length;
+function getRandomChoice () {
+    let randomNumber = Math.floor(Math.random() * 3);
+    console.log(randomNumber);
+    switch (randomNumber) {
+        case 0:
+            return "rock";
 
-    //randomly return rock, paper or scissors.
-    let moveNumber = Math.random(); //takes a random number
-    let startNumber = 0; //minimum number 
-    let endNumber = length; //maximum number equal to the length of the array of moves possible, means less than 3, so 1, 2, 3 are the only numbers it can print.
-    let movePlayedNumber = Math.floor(moveNumber * (startNumber - endNumber) + endNumber); //number of the move played, address of the element in the array.
-    let computerSelection = computerMoves[movePlayedNumber] //prints the move based on the address of the element.
-    console.log(computerSelection); //prints the move played in string format.
+        case 1: 
+            return "paper";
+
+        case 2:
+            return "scissors";
+    }
 }
-
 
 function roundPlayed (playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return "tie";
     }
-    else if ((playerSelection === "rock" && computerSelection == "scissors")
+    else if ((playerSelection === "rock" && computerSelection === "scissors")
     && (playerSelection === "paper" && computerSelection === "rock")
     && (playerSelection === "scissors" && computerSelection === "paper")) {
-        return "player wins";
+        return "player won";
     }
-    else if ((computerSelection === "paper" && playerSelection === "rock")
-    && (computerSelection === "scissors" && playerSelection === "paper")
-    && (computerSelection === "rock" && playerSelection === "scissors")) {
-        return "computer wins";
+    else if (computerSelection === "rock" && computerSelection === "scissors"
+    && (computerSelection === "paper" && computerSelection === "rock")
+    && (computerSelection === "scissors" && computerSelection === "paper")) {
+        return "computer won";
     }
 }
 
-const playerSelection = window.prompt();
-const computerSelection = computerPlay();
-console.log(playerSelection);
-console.log(roundPlayed(playerSelection, computerSelection));
+const computerSelection = getRandomChoice();
+roundPlayed(playerSelection, computerSelection);
