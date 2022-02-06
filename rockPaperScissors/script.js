@@ -1,33 +1,43 @@
-function getRandomChoice () {
-    let randomNumber = Math.floor(Math.random() * 3);
-    console.log(randomNumber);
-    switch (randomNumber) {
+function computerPlay () {
+    let number = Math.floor(Math.random() * 3);
+
+    switch (number) {
         case 0:
             return "rock";
-
-        case 1: 
+            break;
+    
+        case 1:
             return "paper";
+            break;
 
-        case 2:
+        case 2: 
             return "scissors";
+            break;
+
+        default:
+            break;
     }
 }
+console.log(computerPlay());
 
-function roundPlayed (playerSelection, computerSelection) {
+function playRound (playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return "tie";
     }
-    else if ((playerSelection === "rock" && computerSelection === "scissors")
-    && (playerSelection === "paper" && computerSelection === "rock")
-    && (playerSelection === "scissors" && computerSelection === "paper")) {
-        return "player won";
+    else if (playerSelection === "rock" && computerSelection === "scissors"
+    || (playerSelection === "paper" && computerSelection === "rock")
+    || (playerSelection === "scissors" && computerSelection === "paper")) {
+        return "you win";
     }
-    else if (computerSelection === "rock" && computerSelection === "scissors"
-    && (computerSelection === "paper" && computerSelection === "rock")
-    && (computerSelection === "scissors" && computerSelection === "paper")) {
-        return "computer won";
+    else if (computerSelection === "rock" && playerSelection === "scissors"
+    || (computerSelection === "paper" && playerSelection === "rock")
+    || (computerSelection === "scissors" && playerSelection === "paper")) {
+        return "computer wins";
     }
 }
 
-const computerSelection = getRandomChoice();
-roundPlayed(playerSelection, computerSelection);
+const playerSelection = "rock";
+const computerSelection = computerPlay();
+console.log(computerSelection);
+console.log(playRound(playerSelection, computerSelection));
+
