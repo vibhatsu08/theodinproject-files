@@ -50,4 +50,6 @@ console.log(newArray1newArray2newArray3);
 //using the splice method
 //splicing an array adds items to an array
 const newArray4 = ["mando", "boba fett", "grogu", "fennec shand"];
-newArray4.splice();
+newArray4.splice(2, 0, "lemon", "kiwi");
+//array_name.splice(number_of_elements, number_of_elements_to_delete, elements);
+console.log(newArray4);
