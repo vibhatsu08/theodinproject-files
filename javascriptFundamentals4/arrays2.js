@@ -53,3 +53,10 @@ const newArray4 = ["mando", "boba fett", "grogu", "fennec shand"];
 newArray4.splice(2, 0, "lemon", "kiwi");
 //array_name.splice(number_of_elements, number_of_elements_to_delete, elements);
 console.log(newArray4);
+
+//using the slice method
+const newArray5 = ["banana", "orange", "lime", "kiwi", "grapes"];
+console.log(newArray5.slice(2));
+//array_name.slice(slice_till_address);
+
+
