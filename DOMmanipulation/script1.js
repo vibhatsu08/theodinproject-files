@@ -30,4 +30,4 @@ let new_para = document.createElement('p');
 new_para.textContent = 'ME TOO!';
 new_div.appendChild(new_para);
 
-document.body.insertBefore(new_div);
+document.body.insertBefore(new_div, null);
