@@ -18,7 +18,7 @@ element.appendChild(header_3);
 let new_div = document.createElement('div');
 new_div.setAttribute('style', 'border: black; background-color: pink');
 element.appendChild(new_div);
-let element_div = document.getElementById('new_div');
+let element_div = document.getElementById('new_div'); //this is a new div
 
 let header_1 = document.createElement('h1');
 header_1.textContent = 'I\'m in a div!';
