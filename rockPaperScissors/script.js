@@ -43,6 +43,7 @@ function game () {
         console.log(`Computer : ${computerSelection}`);
         console.log(`Player : ${playerSelection}`);
         console.log(playRound(playerSelection, computerSelection));
+        
     }
 }
 
