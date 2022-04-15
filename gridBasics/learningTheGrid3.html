@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning the grid 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+            height: 100vh;
+        }
+        .grid-item {
+            border: 1px solid black;
+        }
+        .grid-navbar {
+            background-color: cornflowerblue;
+            grid-area: 1/1/5/2;
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-header {
+            background-color: gainsboro;
+            grid-area: 1/2/2/5;
+        }
+        .grid-content {
+            background-color: bisque;
+            grid-area: 2/2/5/4;
+        }
+        .grid-sidebar {
+            background-color: burlywood;
+            grid-area: 2/4/5/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item grid-header">
+        </div>
+        <div class="grid-item grid-navbar">
+        </div>
+        <div class="grid-item grid-content"></div>
+        <div class="grid-item grid-sidebar"></div>
+    </div>
+</body>
+</html>
