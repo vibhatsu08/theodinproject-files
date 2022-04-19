@@ -7,3 +7,4 @@ const sumWithInitial = array.reduce (
 );
 
 console.log(sumWithInitial);
+
